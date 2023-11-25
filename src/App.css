@@ -29,3 +29,395 @@
 .small {
   font-size: 0.75rem;
 }
+
+
+/* view */
+
+div#navbarNav {
+  justify-content: end;
+}
+@keyframes changeBackground {
+      0%, 20%, 40%, 60%, 80%, 100% {
+          background-color: #80cbc4; /* Teal background */
+      }
+      25% {
+          background-color: #ff8a65; /* Deep orange background */
+      }
+      50% {
+          background-color: #9ccc65; /* Light green background */
+      }
+      75% {
+          background-color: #9575cd; /* Deep purple background */
+      }
+  }
+
+  .welcome h1 {
+      font-size: 3em;
+      animation: changeText 20s infinite, changeFont 20s infinite;
+      transition: color 1s;
+  }
+
+  @keyframes changeText {
+      0%, 20% {
+          content: "Discover the City with Peak Traveller";
+          color: #ffb74d;
+      }
+      25%, 45% {
+          content: "Your Journey Begins with Us";
+          color: #81c784;
+      }
+      50%, 70% {
+          content: "Experience Comfort, Safety, and Reliability";
+          color: #4caf50;
+      }
+      75%, 95% {
+          content: "Ride in Style with Peak Traveller Taxis";
+          color: #ff8a65;
+      }
+      100% {
+          content: "Welcome to Peak Traveller Taxi Service";
+          color: #4e342e;
+      }
+  }
+
+  @keyframes changeFont {
+      0%, 20% {
+          font-family: 'Arial', sans-serif;
+      }
+      25%, 45% {
+          font-family: 'Courier New', monospace;
+      }
+      50%, 70% {
+          font-family: 'Georgia', serif;
+      }
+      75%, 95% {
+          font-family: 'Times New Roman', serif;
+      }
+      100% {
+          font-family: 'Verdana', sans-serif;
+      }
+  }
+
+  .cta-button {
+      background-color: #ffb74d; /* Amber background */
+      color: #004d40;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  }
+
+  .cta-button:hover {
+      background-color: #ff9800; /* Darker orange on hover */
+  }
+
+  .logo {
+      max-height: 40px;
+  }
+
+  .services .card {
+      margin-bottom: 20px;
+  }
+
+  @keyframes moveTiles {
+      0% {
+          transform: translateX(0);
+      }
+      50% {
+          transform: translateX(50px);
+      }
+      100% {
+          transform: translateX(0);
+      }
+  }
+
+  .gallery {
+      position: relative;
+      overflow: hidden;
+  }
+
+  .gallery .tile {
+      animation: rollInOut 20s infinite; /* Ultra slow rollInOut */
+  }
+
+  @keyframes rollInOut {
+      0%, 100% {
+          transform: scale(0) rotate(0deg);
+          opacity: 0;
+      }
+      50% {
+          transform: scale(1) rotate(360deg);
+          opacity: 1;
+      }
+  }
+
+  .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+      animation: zoomInOut 15s infinite alternate;
+  }
+
+  @keyframes zoomInOut {
+      0%, 100% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(1.2);
+      }
+  }
+
+  /* Additional Styles for Better Visuals */
+  section h2, section p {
+      margin-bottom: 20px;
+  }
+
+  form {
+      max-width: 600px;
+      margin: 0 auto;
+  }
+
+  form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #004d40;
+  }
+
+  form input,
+  form select,
+  form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #81c784; /* Light green border */
+      border-radius: 5px;
+  }
+
+
+
+
+.follow-us-icons {
+      font-size: 50px; /* Larger icons for better visibility */
+      margin-top: 20px;
+  }
+
+  .follow-us-icons a {
+      margin: 0 20px; /* Increased margin for better spacing */
+      color: #333; /* Dark text color for icons */
+      transition: color 0.3s;
+  }
+
+  .follow-us-icons a:hover {
+      color: #ffb74d; /* Amber text color on hover */
+  }
+
+  .fab {
+      font-size: 2em; /* Adjust the size of Font Awesome icons */
+      margin: 0 15px; /* Adjust the margin between icons */
+      color: #007bff; /* Blue color for icons */
+      transition: color 0.3s;
+  }
+
+  .fab:hover {
+      color: #ff4500; /* Orange color on hover */
+  }
+
+  .follow-us-description {
+      margin-top: 20px;
+      font-size: 18px; /* Larger font size for better readability */
+  }
+
+.car-details {
+      margin-top: 20px;
+  }
+
+  .driver-details {
+      margin-top: 20px;
+  }
+
+  .carousel-inner img {
+      max-width: 100%;
+      border-radius: 10px; /* Rounded edges for car photos */
+  }
+
+  .whatsapp-icon {
+      font-size: 24px;
+      color: #25D366; /* WhatsApp green color */
+  }
+
+  .small-image {
+      max-width: 100%;
+      border-radius: 10px; /* Rounded edges for small images */
+      margin-top: 10px;
+  }
+
+
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; /* Light gray background */
+      color: #333; /* Dark text color */
+  }
+
+  nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #ff8a80; /* Light red navbar */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  section {
+      text-align: center;
+      color: #333; /* Dark text color for section headers */
+      background-color: #e0e0e0; /* Light background */
+      position: relative;
+      margin-top: 60px; /* Adjust for fixed navbar */
+      padding: 20px; /* Add padding */
+      border: 2px solid #ccc; /* Light border color */
+      border-radius: 10px; /* Rounded corners */
+  }
+
+  .decorative-background {
+      background-color: #90caf9; /* Light blue background */
+      padding: 20px;
+      border: 2px solid #64b5f6; /* Light border color */
+      border-radius: 10px; /* Rounded corners */
+  }
+
+  .welcome {
+      color: #333;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: changeBackground 20s infinite;
+      margin: 20px; /* Add margin */
+      padding: 20px; /* Add padding */
+      border: 2px solid #ccc; /* Light border color */
+      border-radius: 10px; /* Rounded corners */
+  }
+
+          <!-- /* Additional Styles for Better Visuals */ -->
+  section h2, section p {
+      margin-bottom: 20px;
+  }
+
+  .form-group {
+      margin-bottom: 20px; /* Add margin to form groups */
+  }
+
+
+#book-now {
+      background-color: #f5f5f5;
+      padding: 60px 0;
+  }
+
+  #book-now h2 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+  }
+
+  #booking-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #booking-form label {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+  }
+
+  #booking-form .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+  }
+
+  #booking-form input,
+  #booking-form select {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+      flex: 1;
+  }
+
+  #booking-form input:focus,
+  #booking-form select:focus {
+      border-color: #4285f4;
+  }
+
+  #booking-form button {
+      background-color: #4285f4;
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+
+  #booking-form button:hover {
+      background-color: #1c4ae9;
+  }
+
+<!-- /* Add this style for cursor animation */ -->
+.nav-item:hover::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff8a80; /* Change this to the color you want */
+  transition: width 0.3s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.video-carousel {
+      display: flex;
+      overflow: hidden;
+      max-width: 100%;
+  }
+
+  .video-container {
+      width: 30%; /* Adjust the width as needed */
+      padding-right: 20px; /* Adjust the padding as needed */
+      position: relative;
+      cursor: pointer; /* Add cursor style for better UX */
+  }
+
+  .welcomeVideoBody {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .container {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+  }
+
+.welcome-box {
+  text-align: justify;
+  }
